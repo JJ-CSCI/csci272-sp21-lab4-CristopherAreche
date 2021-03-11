@@ -3,6 +3,7 @@
 //------------------------------
 #include <string>
 #include "catch.hpp"
+#include<bits/stdc++.h>
 using Catch::Matchers::Equals;
 using namespace std;
 //------------------------------
@@ -17,12 +18,20 @@ public:
     this->real = re;
     this->imag = im;
   }
-
-  int re(){
+   int getRe(){
     return this->real;
   }
-  int im(){
+        
+  void setRe(int re){
+    this->real = re;
+  }
+
+  int getIm(){
     return this->imag;
+  }
+        
+  void setIm(int im){
+    this->imag = im;
   }
   
   void operator>>(string &str){
